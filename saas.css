@@ -136,3 +136,34 @@
   color: white;
   padding: 0rem 0.25rem 0rem 0.25rem;
 }
+/* section three styling */
+.section-three {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 6rem;
+ }
+ /* left text box styling */
+.bg-three {
+  background-color: #f7f9fb;
+  padding: 3rem;
+}
+.bg-three span {
+  font-size: 16px;
+}
+.box-text {
+  font-size: 32px;
+  font-weight: 600;
+  color: black;
+  text-align: left;
+}
+/* banner styling */
+.banner {
+  background-color: #f7f9fb;
+  padding-top: 6rem;
+}
+.banner img {
+  width: 36rem;
+  position: relative;
+  top: 3px;
+}
+

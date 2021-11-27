@@ -47,6 +47,7 @@ p {
   display: inline;
   font-weight: 500;
   font-size: 14px;
+  width: fit-content;
 }
 .link-blue {
   color: #477ef7;
