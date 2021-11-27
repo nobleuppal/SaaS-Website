@@ -101,3 +101,38 @@
   padding: 1.5rem;
   border-radius: 3rem;
 }
+/*section two styling */
+.section-two {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+  align-items: center;
+}
+/* cards styling */
+.array {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  padding: 1rem;
+  width: 14rem;
+  height: 16rem;
+  box-shadow: 0px 8px 8px 3px #f0f1f4;
+}
+.card img {
+  width: 64px;
+  height: 64px;
+}
+.card p {
+  font-size: 15px;
+}
+#sketch {
+  background-color: #27c77a;
+  color: white;
+  padding: 0rem 0.25rem 0rem 0.25rem;
+}
