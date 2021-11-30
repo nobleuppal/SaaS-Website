@@ -7,6 +7,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: grid;
+  row-gap: 6rem;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .bg-container {
@@ -49,7 +50,7 @@ p {
   font-size: 14px;
   width: fit-content;
 }
-.link-blue {
+.link-blue, .line {
   color: #477ef7;
   font-weight: 500;
 }
@@ -66,3 +67,13 @@ p {
 .icons img {
   width: 2rem;
 }
+.dots {
+  color: #477ef7;
+  background-color: #f7f9fb;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: fit-content;
+  line-height: 1px;
+  text-align: center; 
+}
+

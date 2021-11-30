@@ -140,7 +140,6 @@
 .section-three {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 6rem;
  }
  /* left text box styling */
 .bg-three {
@@ -165,5 +164,81 @@
   width: 36rem;
   position: relative;
   top: 3px;
+  left: 7px;
 }
+/* section four styling */
+.section-four {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  row-gap: 4rem;
+}
+/* header styling */
+.front p {
+  text-align: center;
+}
+/* dots styling */
+.dot-container {
+  display: flex;
+  justify-content:center; 
+  align-items: center;
+  column-gap: 1rem;
+}
+.line {
+  background-color: #f7f7f7;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  height: 1px;
+  font-size: 0;
+  position: relative;
+  bottom: 3px;
+}
+/* features positioning */
+.features {
+  margin-top: 1rem;
+  text-align: center;
+}
+.features h5:nth-child(1) {
+  position: relative;
+  right: 10rem;
+}
+.features h5:nth-child(2) {
+  position: relative;
+  right: 2rem;
+}
+.features h5:nth-child(3) {
+  position: relative;
+  left: 4rem;
+}
+.features h5:nth-child(4) {
+  position: relative;
+  left: 10rem;
+}
+/* video styling */
+.vid {
+  width: 1000px;
+  height: 500px;
+  position: relative;
+}
+.video {
+  width: 1000px;
+  height: 500px;
+}
+.vid button {
+  color: black;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 3rem;
+  box-shadow: 1px 7px 15px 1px #f0f1f4;
+  border: 1px solid transparent;
+  z-index: 1;
+  background-color:white;
+  
+  position: relative;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
