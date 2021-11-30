@@ -291,6 +291,28 @@
   left: 3.5rem;
   bottom: 26.5rem;
 }
+/* styling section six */
+.section-six {
+  display: grid;
+  grid-template-areas: "statement" "corp-logos";
+  justify-items: center;
+  row-gap: 2rem;
+}
+.statement {
+  grid-area: statement;
+}
+/* logos styling */
+.corp-logos {
+  grid-area: corp-logos;
+  display: flex;
+  width: 70rem;
+  justify-content: center;
+  column-gap: 6.5rem;
+}
+.corp-logos img {
+  width: 5rem;
+}
+
 
 
 
