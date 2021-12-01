@@ -29,7 +29,7 @@ h2 {
 h3 {
   text-align: center;
   font-size: 38px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 0.5rem;
 }
 h5 {
@@ -48,7 +48,7 @@ p {
   padding: .75rem 1rem .75rem 1rem;
   display: inline;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   width: fit-content;
 }
 .link-blue, .line {

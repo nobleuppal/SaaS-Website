@@ -125,8 +125,8 @@
   box-shadow: 0px 8px 8px 3px #f0f1f4;
 }
 .card img {
-  width: 64px;
-  height: 64px;
+  width: 4rem;
+  height: 4rem;
 }
 .card p {
   font-size: 15px;
@@ -312,6 +312,80 @@
 .corp-logos img {
   width: 5rem;
 }
+/*section seven styling */
+.section-seven {
+  display: grid;
+  grid-template-areas: "pricing" "price-info";
+  justify-items: center;
+  row-gap: 3rem;
+}
+.pricing {
+  grid-area: pricing;
+}
+/* price info styling */
+.lrg-card {
+  grid-area: lrg-card;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  justify-content: space-between;
+  align-content: flex-start;
+  
+  padding: 2rem;
+  box-shadow: 0px 8px 8px 3px #f0f1f4;
+}
+.lrg-card .cost span:first-child {
+  font-size: 2rem;
+}
+.lrg-card div:last-child {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.lrg-card .btn-blue {
+  border-radius: 2rem;
+  font-size: 1rem;
+  padding: 0.75rem 2rem 0.75rem 2rem;
+}
+.no-credit {
+  font-size: 0.9rem;
+}
+.price-info {
+  grid-area: price-info;
+
+  display: grid;
+  grid-template-areas: "lrg-card components images" "lrg-card cancel money";
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+.price-info img {
+  width: 2rem;
+  height: 2rem;
+}
+.sml-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.components {
+  grid-area: components;
+  justify-content: flex-end;
+}
+.images {
+  grid-area: images;
+  justify-content: center;
+}
+.cancel {
+  grid-area: cancel;
+}
+.money {
+  grid-area: money;
+}
+
+
+
+
+
 
 
 
