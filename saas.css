@@ -472,6 +472,23 @@
   display: flex;
   column-gap: 1rem;
 }
+/* section 9 styling */
+.section-nine {
+  display: flex;
+  column-gap: 4rem;
+  justify-content: center;
+}
+.section-nine>div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+#hiring {
+  color: white;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+  border-radius: 0.25rem;
+}
+
 
 
 
