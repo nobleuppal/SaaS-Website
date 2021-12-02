@@ -41,6 +41,11 @@ p {
   font-weight: 500;
   line-height: 1.5;
 }
+textarea {
+  width: 22.875rem;
+  height: 4.875rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .btn-blue {
   color: white;
   background-color: #477ef7;
