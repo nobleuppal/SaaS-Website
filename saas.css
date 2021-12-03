@@ -2,7 +2,7 @@
 .navbar-top, .navbar-bottom {
   display: flex;
   color: #6d7a89;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 500;
 }
 /* navbar top styling */
@@ -11,7 +11,7 @@
   column-gap: 0.5rem;
   align-items: center;
 }
-.options-right{
+.options-right { 
   margin-left: auto;
   display: flex;
   column-gap: 2rem;
@@ -57,10 +57,15 @@
 .right-icons {
   grid-column: 2/3;
 }
+.icons {
+  animation-duration: 1s;
+}
 .google-logo {
   position: relative;
   left: 5rem;
   top: 4rem;
+
+  animation-name: movement-one;
 }
 .asana-logo {
   position: relative;
@@ -68,6 +73,8 @@
   top: 1rem;
   padding: 1.5rem;
   border-radius: 3rem;
+
+  animation-name: movement-two;
 }
 .atlassian-logo {
   position: relative;
@@ -75,6 +82,8 @@
   bottom: 3rem;
   padding: 1.5rem;
   border-radius: 3rem;
+
+  animation-name: movement-three;
 }
 .calendar-logo {
   position: relative;
@@ -82,10 +91,14 @@
   top: 9rem;
   padding: 1.5rem;
   border-radius: 3rem;
+
+  animation-name: movement-four;
 }
 .gads-logo {
   position: relative;
   left: 11rem;
+
+  animation-name: movement-five;
 }
 .paypal-logo {
   position: relative;
@@ -93,6 +106,8 @@
   left: 4rem;
   padding: 1.5rem;
   border-radius: 3rem;
+
+  animation-name: movement-six;
 }
 .weave-logo {
   position: relative;
@@ -100,6 +115,78 @@
   bottom: 13rem;
   padding: 1.5rem;
   border-radius: 3rem;
+
+  animation-name: movement-seven;
+}
+@keyframes movement-one {
+  from {
+    position: relative;
+    top: 14rem;
+  }
+  to { 
+    position: relative;
+    top: 4rem;
+  }
+}
+@keyframes movement-two {
+  from {
+    position: relative;
+    top: 11rem;
+  }
+  to { 
+    position: relative;
+    top: 1rem;
+  }
+}
+@keyframes movement-three {
+  from {
+    position: relative;
+    bottom: -7rem;
+  }
+  to { 
+    position: relative;
+    bottom: 3rem;
+  }
+}
+@keyframes movement-four {
+  from {
+    position: relative;
+    top: 19rem;
+  }
+  to { 
+    position: relative;
+    top: 9rem;
+  }
+}
+@keyframes movement-five {
+  from {
+    position: relative;
+    top: 10rem;
+  }
+  to { 
+    position: relative;
+    top: 0rem;
+  }
+}
+@keyframes movement-six {
+  from {
+    position: relative;
+    bottom: -2rem;
+  }
+  to { 
+    position: relative;
+    bottom: 8rem;
+  }
+}
+@keyframes movement-seven {
+  from {
+    position: relative;
+    bottom: 3rem;
+  }
+  to { 
+    position: relative;
+    bottom: 13rem;
+  }
 }
 /*section two styling */
 .section-two {
@@ -147,7 +234,7 @@
   padding: 3rem;
 }
 .bg-three span {
-  font-size: 16px;
+  font-size: 1rem;
 }
 .box-text {
   font-size: 32px;
@@ -444,6 +531,7 @@
 .form select {
   width: 11rem;
   appearance: none;
+  position: relative;
   z-index: 3;
 }
 [for="budget"], [for="country"] {
@@ -517,6 +605,231 @@
   padding: 0.25rem;
   border-radius: 0.25rem;
 }
+/* mobile responsiveness */
+@media all and (max-width: 375px) {
+  body {
+    row-gap: 2rem;
+  }
+  /* mobile navbar */
+  .navbar-top, .navbar-bottom {
+    column-gap: 2rem;
+  }
+  nav, section {
+    margin: 0rem;
+    max-width: 367px;
+    padding: 0.25rem;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .navbar-bottom {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .menu-right {
+    margin-left: 0rem;
+  }
+  .menu-right ul {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  /* mobile section 1 */
+  .bg-container {
+    max-width: 375px;
+    background: linear-gradient(174deg, white, #f7f9fb 51%, white 5%);
+  }
+  .section-one {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .left-text-box {
+    grid-row: 1/2;
+    align-items: center;
+  }
+  .right-icons {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    position: relative;
+    right: 2rem;
+  }
+  .section-one h2 {
+    text-align: center;
+  }
+  .asana-logo {
+    left: 15rem;
+    top: 20rem;
+  }
+  .calendar-logo { 
+    left: 3rem;
+    top: 12rem;
+  }
+  @keyframes movement-two {
+    from {
+      position: relative;
+      top: 30rem;
+    }
+    to { 
+      position: relative;
+      top: 20rem;
+    }
+  }
+  @keyframes movement-four {
+    from {
+      position: relative;
+      top: 22rem;
+    }
+    to { 
+      position: relative;
+      top: 12rem;
+    }
+  }
+  /* mobile section 2 */
+  .key {
+    text-align: center;
+  }
+  .array {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  /* mobile section 3 */
+  .section-three {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .box-text {
+    text-align: center;
+  }
+  .bg-three {
+    padding: 0rem;
+  }
+  .left-text-box {
+    max-width: 367px;
+  }
+  .banner img {
+    max-width: 367px;
+  }
+  /* mobile section 4 */
+  .bccp {
+    display: flex;
+    align-content: center;
+  }
+  .dot-container {
+    flex-direction: column;
+    row-gap: 5rem;
+    width: 2.5rem;
+  }
+  .line {
+    transform: rotate(90deg);
+  }
+  .features {
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10.75rem;
+    width: min-content;
+  }
+  .features h5:nth-child(1), .features h5:nth-child(2) {
+    right: 0rem;
+  }
+  .features h5:nth-child(3), .features h5:nth-child(4) {
+    left: 0rem;
+  }
+  .vid, .video {
+    width: 367px;
+  }
+  /* mobile section 5 */
+  .section-five {
+    grid-template-columns: 22rem;
+    grid-template-rows: 30rem 25rem;
+  }
+  .testimonial {
+    margin-bottom: 0rem;
+  }
+  /* mobile section 6 */
+  .corp-logos {
+    flex-direction: column;
+    width: fit-content;
+    row-gap: 1rem;
+  }
+  /* mobile section 7 */
+  .section-seven {
+    margin-top: 4rem;
+  }
+  .price-info {
+    grid-template-areas: "lrg-card" "components" "images"  "cancel" "money";
+    row-gap: 2rem;
+    justify-items: center;
+  }
+  .sml-card, .lrg-card {
+    box-shadow: 0px 4px 8px 3px #f0f1f4; 
+  }
+  .lrg-card {
+    width: 16rem;
+  }
+  .sml-card {
+    align-content: center;
+    width: 17rem;
+    padding: 1rem;
+  }
+  /* mobile section 8 */
+  /* form side styling */
+  .section-eight {
+    flex-direction: column;
+    padding: 0.25rem 0.25rem 1rem 0.25rem;
+    row-gap: 2rem;
+  }
+  .form {
+    padding: 0.5rem;
+    width: 20rem;
+  }
+  .form h5 {
+    text-align: center;
+  }
+  .form select {
+    width: 20rem;
+  }
+  [for="budget"], [for="country"] {
+    left: 18.5rem;
+  }
+  .comment {
+    margin-top: 0rem;
+  }
+  textarea {
+    width: 20rem;
+    margin-top: 0rem;
+  }
+  .box {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .box-two {
+    flex-direction: column;
+    row-gap: 1rem;
+    height: 9.5rem;
+    bottom: 0rem;
+    width: 20rem;
+  }
+  .box-two>div {
+    width: 20rem;
+  }
+  /* mobile section 9 */
+  .section-nine {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    padding-bottom: 2rem;
+  }
+  .section-nine>div {
+    text-align: center;
+  }
+  .logo {
+    align-self: center;
+  }
+}
+
 
 
 
